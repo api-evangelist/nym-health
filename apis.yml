@@ -1,8 +1,25 @@
 aid: nym-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nym-health.png
 name: Nym Health
-description: 'Nym Health is a company surfaced as a portfolio company of gv, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: life-sciences. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Nym Health provides autonomous medical coding for health systems and physician
+  groups. Its Clinical Language Understanding (CLU) engine reads patient charts and assigns
+  medical codes automatically with a transparent audit trail for every code, keeping current
+  as coding guidelines change and supporting multispecialty environments. Nym is used by 30+
+  health systems including Ochsner Health, Inova, Henry Ford and Geisinger, and is backed by
+  GV and Lightspeed Venture Partners. As of this enrichment pass Nym publishes no public
+  developer portal, API documentation, SDKs, or OpenAPI surface; integrations are handled
+  directly with health systems via sales/demo engagement.'
 url: https://raw.githubusercontent.com/api-evangelist/nym-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Life Sciences
+- Healthcare
+- Medical Coding
+- Autonomous Coding
+- Clinical NLP
+- Revenue Cycle
+- Health IT
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nym-health-domain-security.yml
 - type: Website
-  url: http://nym.health
+  url: https://nym.health
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
